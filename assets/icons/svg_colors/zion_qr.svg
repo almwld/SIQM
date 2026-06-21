@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="egyptianGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00BCD4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00838F;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8F00;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <circle cx="32" cy="32" r="28" fill="url(#egyptianGrad)" opacity="0.05"/>
+  <circle cx="32" cy="32" r="28" stroke="url(#egyptianGrad)" stroke-width="1" fill="none" opacity="0.3"/>
+  
+  <g filter="url(#glow)">
+    <path d="M16 32 Q32 12 48 32 Q32 52 16 32 Z" stroke="#00BCD4" stroke-width="1.5" fill="none"/><circle cx="32" cy="32" r="6" stroke="#FFD700" stroke-width="1.5" fill="none"/><path d="M22 18 Q32 10 42 18" stroke="#00BCD4" stroke-width="1.5" fill="none"/><path d="M32 38 Q32 45 25 45" stroke="#00BCD4" stroke-width="1.5" fill="none"/><path d="M10 10 h10 v10 h-10 z M44 10 h10 v10 h-10 z M10 44 h10 v10 h-10 z" fill="#FFD700" opacity="0.6"/>
+  </g>
+  
+  <!-- Cyber Ornaments -->
+  <path d="M10 10 L20 10 M10 10 L10 20" stroke="#FFD700" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M54 10 L44 10 M54 10 L54 20" stroke="#FFD700" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M10 54 L20 54 M10 54 L10 44" stroke="#FFD700" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M54 54 L44 54 M54 54 L54 44" stroke="#FFD700" stroke-width="1" fill="none" opacity="0.6"/>
+</svg>
